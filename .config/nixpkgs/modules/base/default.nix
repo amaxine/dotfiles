@@ -9,6 +9,7 @@
     fish
     git
     gnupg
+    htop
     nixfmt
     powerline-go
     unrar
@@ -56,6 +57,16 @@
       s = "status";
       sw = "switch";
       undo = "reset --soft HEAD^";
+    };
+  };
+
+  programs.htop = {
+    enable = true;
+
+    headerMargin = false;
+    meters = {
+      left = [ "LeftCPUs2" "Memory" "Swap" "Hostname" ];
+      right = [ "RightCPUs2" "Tasks" "LoadAverage" "Uptime" ];
     };
   };
 
