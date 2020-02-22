@@ -12,9 +12,31 @@
     htop
     nixfmt
     powerline-go
+    tmux
     unrar
     unzip
   ];
+
+  xdg = {
+    enable = true;
+
+    cacheHome = "${config.home.homeDirectory}/.cache";
+    configHome = "${config.home.homeDirectory}/.config";
+    dataHome = "${config.home.homeDirectory}/.local/share";
+
+    userDirs = {
+      enable = true;
+
+      desktop = "${config.xdg.configHome}/Desktop";
+      documents = "${config.home.homeDirectory}/Documents";
+      download = "${config.home.homeDirectory}/Download";
+      music = "${config.xdg.userDirs.documents}/Music";
+      pictures = "${config.xdg.userDirs.documents}/Pictures";
+      publicShare = "${config.xdg.userDirs.documents}/Public";
+      templates = "${config.xdg.configHome}/Templates";
+      videos = "${config.xdg.userDirs.documents}/Videos";
+    };
+  };
 
   programs.fish = {
     enable = true;
@@ -49,6 +71,7 @@
       co = "checkout";
       d = "diff";
       fixup = "commit --amend --no-edit";
+      l = "log";
       lb =
         "!sh -c 'git log -$(git rev-list --count HEAD ^\${1:-master}) --topo-order --graph --date=relative --pretty=format:%Cgreen%h%Creset\\\\ %s%Cred%d%Creset\\\\ %C\\\\(yellow\\\\ bold\\\\)\\\\(%an\\\\)%Creset' $@";
       rc = "rebase --continue";
