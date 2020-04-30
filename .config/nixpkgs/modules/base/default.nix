@@ -10,7 +10,6 @@
     git
     gnupg
     htop
-    nixfmt
     powerline-go
     tmux
     unrar
@@ -36,6 +35,9 @@
       templates = "${config.xdg.configHome}/Templates";
       videos = "${config.xdg.userDirs.documents}/Videos";
     };
+
+    # Gnome tends to overwrite it anyway, so this avoids failure
+    configFile."user-dirs.dirs".force = true;
   };
 
   programs.fish = {
@@ -96,8 +98,8 @@
   services.gpg-agent = {
     enable = true;
 
-    defaultCacheTtl = 1800;
-    defaultCacheTtlSsh = 1800;
+    defaultCacheTtl = 7200;
+    defaultCacheTtlSsh = 7200;
 
     maxCacheTtl = 14400;
     maxCacheTtlSsh = 14400;
