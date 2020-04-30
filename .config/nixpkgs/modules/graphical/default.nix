@@ -12,6 +12,7 @@
     slack
     firefox
     kitty
+    quasselClient
   ];
 
   dconf = {
