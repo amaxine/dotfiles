@@ -30,7 +30,7 @@
 
       "org/gnome/shell" = {
         enabled-extensions =
-          [ "dash-to-dock@micxgx.gmail.com" "no-title-bar@jonaspoehler.de" ];
+          [ "dash-to-dock@micxgx.gmail.com" "no-title-bar@jonaspoehler.de" "appindicatorsupport@rgcjonas.gmail.com" ];
       };
 
       "org/gnome/desktop/interface" = {
