@@ -8,7 +8,9 @@
   home.packages = with pkgs; [
     fish
     git
+    gitAndTools.gh
     gnupg
+    go
     htop
     powerline-go
     tmux
