@@ -10,7 +10,7 @@
     signal-desktop
     tdesktop
     slack
-    firefox
+    firefox-wayland
     kitty
     quasselClient
   ];
