@@ -85,6 +85,9 @@
       sw = "switch";
       undo = "reset --soft HEAD^";
     };
+    extraConfig = {
+      pull.ff = "only";
+    };
   };
 
   programs.htop = {
