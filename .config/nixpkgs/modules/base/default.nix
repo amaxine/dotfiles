@@ -30,7 +30,7 @@
 
       desktop = "${config.xdg.configHome}/Desktop";
       documents = "${config.home.homeDirectory}/Documents";
-      download = "${config.home.homeDirectory}/Download";
+      download = "${config.home.homeDirectory}/Downloads";
       music = "${config.xdg.userDirs.documents}/Music";
       pictures = "${config.xdg.userDirs.documents}/Pictures";
       publicShare = "${config.xdg.userDirs.documents}/Public";
@@ -52,6 +52,7 @@
           eval ${pkgs.powerline-go}/bin/powerline-go -shell bare -mode flat -modules vgo,venv,git,hg
       end
       set EDITOR vim
+      set fish_greeting
           '';
     shellAliases = {
       ".." = "cd ..";
