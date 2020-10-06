@@ -6,7 +6,9 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
+    docker-compose
     fish
+    gcc
     git
     gitAndTools.gh
     gnupg
@@ -46,6 +48,9 @@
     enable = true;
     promptInit = ''
       function fish_prompt
+          if test -n "$IN_NIX_SHELL"
+              echo -n "nix> "
+          end
           eval ${pkgs.powerline-go}/bin/powerline-go -error $status -shell bare -colorize-hostname -modules host,ssh,cwd,perms,jobs,exit -cwd-mode plain
       end
       function fish_right_prompt
@@ -59,6 +64,7 @@
       home =
         "git --work-tree=${config.home.homeDirectory} --git-dir=${config.xdg.configHome}/home.git";
       l = "ls -lAh";
+      nix-shell = "nix-shell --run fish";
     };
   };
 
@@ -87,6 +93,7 @@
       undo = "reset --soft HEAD^";
     };
     extraConfig = {
+      init.defaultBranch = "main";
       pull.ff = "only";
     };
   };
