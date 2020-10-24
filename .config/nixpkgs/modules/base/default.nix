@@ -70,7 +70,7 @@
 
   programs.git = {
     enable = true;
-    userName = "Maxine E. Aubrey";
+    userName = "Maxine Aubrey";
     userEmail = "maxeaubrey@gmail.com";
     signing = {
       key = "1F6CE814B764EC432A786C0DF6FE033DFCB899F7";
