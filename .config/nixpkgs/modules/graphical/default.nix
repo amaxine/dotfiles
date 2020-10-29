@@ -14,6 +14,7 @@
     kitty
     quasselClient
     spotify
+    steam
   ];
 
   dconf = {
