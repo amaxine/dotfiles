@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    ansible
+    ansible_2_9
     yubikey-manager
     yubioath-desktop
     tflint
