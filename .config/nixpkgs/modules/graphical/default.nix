@@ -85,10 +85,6 @@
       "org/gnome/shell" = {
         always-show-log-out = true;
       };
-
-      "org/gnome/mutter" = {
-        experimental-features = [ "scale-monitor-framebuffer" ];
-      };
     };
   };
 }

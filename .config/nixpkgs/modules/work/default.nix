@@ -3,8 +3,6 @@
 {
   home.packages = with pkgs; [
     ansible_2_9
-    yubikey-manager
-    yubioath-desktop
     tflint
     awscli
     ssm-session-manager-plugin
