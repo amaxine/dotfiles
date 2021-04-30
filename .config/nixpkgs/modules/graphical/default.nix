@@ -6,15 +6,11 @@
   home.packages = with pkgs; [
     powerline-fonts
     vscodium
-    skypeforlinux
-    signal-desktop
-    tdesktop
     slack
     firefox-wayland
     kitty
     quasselClient
     spotify
-    steam
   ];
 
   dconf = {

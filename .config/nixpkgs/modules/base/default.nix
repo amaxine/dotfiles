@@ -8,6 +8,7 @@
   home.packages = with pkgs; [
     docker-compose
     fish
+    fishPlugins.foreign-env
     gcc
     git
     gitAndTools.gh
