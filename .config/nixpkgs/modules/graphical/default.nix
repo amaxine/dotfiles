@@ -11,6 +11,7 @@
     kitty
     quasselClient
     spotify
+    _1password-gui
   ];
 
   dconf = {
