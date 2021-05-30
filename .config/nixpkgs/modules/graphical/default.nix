@@ -40,10 +40,6 @@
         icon-theme = "Yaru";
       };
 
-      "org/gnome/desktop/wm/preferences" = {
-        button-layout = "close,minimize,maximize:appmenu";
-      };
-
       "org/gnome/shell/extensions/dash-to-dock" = {
         animate-show-apps = false;
         apply-custom-theme = false;
