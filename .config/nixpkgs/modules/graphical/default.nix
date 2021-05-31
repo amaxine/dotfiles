@@ -5,7 +5,7 @@
 
   home.packages = with pkgs; [
     powerline-fonts
-    vscodium
+    vscode
     slack
     firefox-wayland
     kitty
