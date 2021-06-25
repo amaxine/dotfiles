@@ -11,6 +11,7 @@
     quasselClient
     spotify
     _1password-gui
+    aws-vault
   ];
 
   dconf = {
