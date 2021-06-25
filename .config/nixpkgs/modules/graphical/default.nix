@@ -29,7 +29,7 @@
 
       "org/gnome/shell" = {
         enabled-extensions =
-          [ "dash-to-dock@micxgx.gmail.com" "no-title-bar@jonaspoehler.de" "appindicatorsupport@rgcjonas.gmail.com" ];
+          [ "appindicatorsupport@rgcjonas.gmail.com" ];
       };
 
       "org/gnome/desktop/interface" = {
@@ -38,24 +38,6 @@
         cursor-theme = "Yaru";
         gtk-theme = "Yaru";
         icon-theme = "Yaru";
-      };
-
-      "org/gnome/shell/extensions/dash-to-dock" = {
-        animate-show-apps = false;
-        apply-custom-theme = false;
-        click-action = "previews";
-        custom-background-color = false;
-        custom-theme-customize-running-dots = true;
-        custom-theme-running-dots-border-color = "#f57900";
-        custom-theme-running-dots-color = "#fcaf3e";
-        custom-theme-shrink = true;
-        dash-max-icon-size = 32;
-        dock-fixed = true;
-        extend-height = true;
-        running-indicator-style = "DASHES";
-        show-mounts = false;
-        show-trash = false;
-        transparency-mode = "DYNAMIC";
       };
 
       "org/gnome/settings-daemon/plugins/media-keys" = {
