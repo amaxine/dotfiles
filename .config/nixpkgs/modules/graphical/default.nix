@@ -8,7 +8,6 @@
     vscode
     slack
     firefox-wayland
-    kitty
     quasselClient
     spotify
     _1password-gui
@@ -49,7 +48,7 @@
       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" =
         {
           binding = "<Primary><Alt>t";
-          command = "kitty";
+          command = "gnome-terminal";
           name = "Launch Terminal";
         };
 
