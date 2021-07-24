@@ -102,10 +102,10 @@
   programs.htop = {
     enable = true;
 
-    headerMargin = false;
-    meters = {
-      left = [ "LeftCPUs2" "Memory" "Swap" "Hostname" ];
-      right = [ "RightCPUs2" "Tasks" "LoadAverage" "Uptime" ];
+    settings = {
+      header_margin = false;
+      left_meters = [ "LeftCPUs2" "Memory" "Swap" "Hostname" ];
+      right_meters = [ "RightCPUs2" "Tasks" "LoadAverage" "Uptime" ];
     };
   };
 
