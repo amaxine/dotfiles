@@ -2,6 +2,6 @@
 
 {
   imports = [
-    ../../modules/base
+    ../../modules/default
   ];
 }
