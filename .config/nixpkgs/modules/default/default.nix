@@ -47,7 +47,7 @@
 
   programs.fish = {
     enable = true;
-    promptInit = ''
+    interactiveShellInit = ''
       function fish_prompt
           if test -n "$IN_NIX_SHELL"
               echo -n "nix> "
