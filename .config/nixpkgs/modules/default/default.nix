@@ -6,7 +6,6 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    docker-compose
     fish
     fishPlugins.foreign-env
     gcc

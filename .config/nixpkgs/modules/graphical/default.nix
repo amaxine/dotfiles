@@ -9,9 +9,16 @@
     slack
     firefox-wayland
     quasselClient
-    spotify
-    _1password-gui
     aws-vault
+
+    awscli2
+    ssm-session-manager-plugin
+    terraform
+    tflint
+    jq
+    gnumake
+    packer
+    golangci-lint
   ];
 
   dconf = {
