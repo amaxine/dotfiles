@@ -88,9 +88,11 @@
         "!sh -c 'git log -$(git rev-list --count HEAD ^\${1:-master}) --topo-order --graph --date=relative --pretty=format:%Cgreen%h%Creset\\\\ %s%Cred%d%Creset\\\\ %C\\\\(yellow\\\\ bold\\\\)\\\\(%an\\\\)%Creset' $@";
       rc = "rebase --continue";
       rv = "remote -v";
-      rma = "rebase master";
+      rma = "!sh -c 'git rebase $(git rev-parse --abbrev-ref origin/HEAD | cut -d/ -f2- || echo -n main)'";
       s = "status";
       sw = "switch";
+      sc = "switch -c";
+      sm = "!sh -c 'git switch $(git rev-parse --abbrev-ref origin/HEAD | cut -d/ -f2- || echo -n main)'";
       undo = "reset --soft HEAD^";
     };
     extraConfig = {
