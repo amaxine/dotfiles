@@ -111,4 +111,8 @@
   };
 
   systemd.user.startServices = true;
+
+  home.stateVersion = "22.11";
+  home.username = "maxine";
+  home.homeDirectory = "/home/maxine";
 }
