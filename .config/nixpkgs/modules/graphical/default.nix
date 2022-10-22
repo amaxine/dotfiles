@@ -43,6 +43,9 @@
       "org/gnome/settings-daemon/plugins/media-keys" = {
         custom-keybindings = [
           "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/1password0/"
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/1password1/"
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/1password2/"
         ];
       };
 
@@ -51,6 +54,27 @@
           binding = "<Primary><Alt>t";
           command = "gnome-terminal";
           name = "Launch Terminal";
+        };
+
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/1password0" =
+        {
+          binding = "<Primary><Shift>l";
+          command = "1password --lock";
+          name = "Lock 1Password";
+        };
+
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/1password1" =
+        {
+          binding = "<Primary><Shift>space";
+          command = "1password --quick-access";
+          name = "1Password Quick Access";
+        };
+
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/1password2" =
+        {
+          binding = "";
+          command = "1password --toggle";
+          name = "Open 1Password";
         };
 
       "org/gnome/desktop/input-sources" = {
